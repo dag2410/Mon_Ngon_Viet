@@ -1,0 +1,23 @@
+// import ở đây
+//base
+@import "./base/reset";
+
+// utils
+@import "./utils/variables";
+//component
+@import "./component/button";
+
+// layout
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/main-home";
+@import "./layout/footer";
+
+// page
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/blog";
+@import "./pages/menu";
+@import "./pages/shop";
+
+// vendor

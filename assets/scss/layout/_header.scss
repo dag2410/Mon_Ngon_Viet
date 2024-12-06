@@ -1,0 +1,62 @@
+// Header
+.d-flex {
+  display: flex;
+}
+.header {
+  width: 100%;
+  max-width: 1920px;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 40px 200px;
+  z-index: 99;
+  // gap: 94px;
+  // .header__bgr {
+  // }
+  .header__icon {
+    z-index: 99;
+    gap: 16px;
+    .icon-form {
+      font-size: 16px;
+    }
+  }
+  .header__nav {
+    margin-right: 300px;
+    gap: 32px;
+    a {
+      // padding: 8px 10px;
+      display: inline-block;
+      color: $title-color;
+      font-family: $font-sub;
+      font-size: 1.6em;
+      line-height: 2.4;
+      position: relative;
+      text-align: center;
+      &:hover {
+        font-weight: 700;
+        text-shadow: 0.1px 0 0 currentColor;
+      }
+      &::before {
+        content: attr(title);
+        display: block;
+        font-weight: 700;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+      &::after {
+        content: "";
+        background: $sub-color;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover::after {
+        width: 24px;
+      }
+    }
+  }
+}

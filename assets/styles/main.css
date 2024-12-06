@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.main__button {
+  gap: 16px;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6;
+  background-color: #195a00;
+  border: 1px solid #195a00;
+  border-radius: 6px;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 10px;
+  width: 205px;
+  height: 58px;
+}
+
+.btn-medium {
+  padding: 10px;
+  width: 222px;
+  height: 58px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  max-width: 1920px;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 40px 200px;
+  z-index: 99;
+}
+.header .header__icon {
+  z-index: 99;
+  gap: 16px;
+}
+.header .header__icon .icon-form {
+  font-size: 16px;
+}
+.header .header__nav {
+  margin-right: 300px;
+  gap: 32px;
+}
+.header .header__nav a {
+  display: inline-block;
+  color: #333;
+  font-family: "Inter";
+  font-size: 1.6em;
+  line-height: 2.4;
+  position: relative;
+  text-align: center;
+}
+.header .header__nav a:hover {
+  font-weight: 700;
+  text-shadow: 0.1px 0 0 currentColor;
+}
+.header .header__nav a::before {
+  content: attr(title);
+  display: block;
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.header .header__nav a::after {
+  content: "";
+  background: #195a00;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+.header .header__nav a:hover::after {
+  width: 24px;
+}
+
+.main__hero {
+  padding: 0 200px 140px 200px;
+  gap: 190px;
+}
+
+.main__hero-left {
+  margin-top: 150px;
+}
+.main__hero-left span {
+  color: #195a00;
+  font-family: "Miniver";
+  font-size: 18px;
+  line-height: 2.6;
+  position: relative;
+}
+.main__hero-left span::before {
+  content: "";
+  bottom: 30%;
+  right: -30%;
+  position: absolute;
+  width: 2.7rem;
+  height: 0.1rem;
+  border-radius: 6px;
+  background: #195a00;
+}
+.main__hero-left h1 {
+  margin-top: 8px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  word-spacing: 5px;
+}
+.main__hero-left h1 img {
+  position: absolute;
+  bottom: -15%;
+}
+.main__hero-left p {
+  margin-top: 32px;
+  color: #4f4f4f;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.main__hero-left .main__button {
+  margin-top: 31px;
+}
+
+.main__button-show:hover,
+.main__button-place:hover {
+  background: #fff;
+  color: #195a00;
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.main__hero-right {
+  position: relative;
+}
+.main__hero-right .picture-main {
+  width: 600;
+  height: 565px;
+}
+.main__hero-right .pic-top,
+.main__hero-right .pic-mid,
+.main__hero-right .pic-bottom {
+  position: absolute;
+  z-index: -1;
+}
+.main__hero-right .pic-top {
+  top: -5%;
+  left: -20%;
+}
+.main__hero-right .pic-mid {
+  bottom: -12%;
+  left: -25%;
+}
+.main__hero-right .pic-bottom {
+  bottom: -25%;
+  left: 18%;
+}
+
+.main__about-us {
+  margin-top: 130px;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 80px;
+}
+.main__about-us .about-us--left {
+  gap: 24px;
+}
+.main__about-us .about-us--left .about-us__image--sub {
+  margin-top: 35px;
+  flex-direction: column;
+  gap: 27px;
+}
+.main__about-us .about-us--right {
+  margin-top: 130px;
+}
+.main__about-us .about-us--right span {
+  color: #195a00;
+  font-family: "Miniver";
+  font-size: 1.8rem;
+  position: relative;
+}
+.main__about-us .about-us--right span::before {
+  content: "";
+  bottom: 30%;
+  right: -60%;
+  position: absolute;
+  width: 3.1rem;
+  height: 0.1rem;
+  border-radius: 6px;
+  background: #195a00;
+}
+.main__about-us .about-us--right h2 {
+  margin-top: 8px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1;
+  word-spacing: 3px;
+}
+.main__about-us .about-us--right p {
+  margin-top: 32px;
+  color: #4f4f4f;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.main__about-us .about-us--right button {
+  background: #195a00;
+  color: #fff;
+}
+.main__about-us .about-us--right button:hover {
+  background: #fff;
+  color: #195a00;
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.main__about-us .about-us--right .about-us__btn {
+  margin-top: 33px;
+  align-items: center;
+  gap: 16px;
+}
+.main__about-us .about-us--right .about-us__btn--watch {
+  gap: 10px;
+  align-items: center;
+}
+.main__about-us .about-us--right .about-us__btn--watch a {
+  color: #333;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4;
+}
+.main__about-us .about-us--right .about-us__btn--watch img {
+  cursor: pointer;
+}
+
+.main__foot-category {
+  margin-top: 160px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.main__foot-category h2 {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+.main__foot-category p {
+  margin-top: 15px;
+  color: #4f4f4f;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.main__foot-category ul {
+  position: relative;
+  margin-top: 55px;
+  gap: 24px;
+}
+.main__foot-category ul .hover {
+  display: none;
+}
+.main__foot-category ul .foot-category--right,
+.main__foot-category ul .foot-category--left {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 4px;
+  background: rgba(25, 90, 0, 0.3);
+}
+.main__foot-category ul .foot-category--left {
+  position: absolute;
+  top: 33%;
+  left: -7%;
+}
+.main__foot-category ul .foot-category--left:hover {
+  border-radius: 4px;
+  background: #195a00;
+}
+.main__foot-category ul .foot-category--left:hover .integral {
+  display: none;
+}
+.main__foot-category ul .foot-category--left:hover .hover {
+  display: block;
+}
+.main__foot-category ul .foot-category--right {
+  position: absolute;
+  top: 33%;
+  right: -7%;
+}
+.main__foot-category ul .foot-category--right:hover {
+  border-radius: 4px;
+  background: #195a00;
+}
+.main__foot-category ul .foot-category--right:hover .integral {
+  display: none;
+}
+.main__foot-category ul .foot-category--right:hover .hover {
+  display: block;
+}
+.main__foot-category h3 {
+  margin-top: 16px;
+  color: #4f4f4f;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.main__foot-category span {
+  display: flex;
+  justify-content: center;
+  color: #4f4f4f;
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=main.css.map */
