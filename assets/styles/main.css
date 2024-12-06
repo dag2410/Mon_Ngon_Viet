@@ -252,17 +252,14 @@ html {
   gap: 190px;
 }
 
-.main__hero-left {
-  margin-top: 150px;
-}
-.main__hero-left span {
+.span-form {
   color: #195a00;
   font-family: "Miniver";
   font-size: 18px;
   line-height: 2.6;
   position: relative;
 }
-.main__hero-left span::before {
+.span-form::before {
   content: "";
   bottom: 30%;
   right: -30%;
@@ -271,6 +268,10 @@ html {
   height: 0.1rem;
   border-radius: 6px;
   background: #195a00;
+}
+
+.main__hero-left {
+  margin-top: 150px;
 }
 .main__hero-left h1 {
   margin-top: 8px;
@@ -351,22 +352,6 @@ html {
 }
 .main__about-us .about-us--right {
   margin-top: 130px;
-}
-.main__about-us .about-us--right span {
-  color: #195a00;
-  font-family: "Miniver";
-  font-size: 1.8rem;
-  position: relative;
-}
-.main__about-us .about-us--right span::before {
-  content: "";
-  bottom: 30%;
-  right: -60%;
-  position: absolute;
-  width: 3.1rem;
-  height: 0.1rem;
-  border-radius: 6px;
-  background: #195a00;
 }
 .main__about-us .about-us--right h2 {
   margin-top: 8px;
@@ -502,4 +487,64 @@ html {
   margin-top: 16px;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+}
+
+.main__wcu {
+  padding: 0 200px;
+  padding-bottom: 100px;
+  margin-top: 120px;
+  gap: 280px;
+}
+.main__wcu .main__wcu-img {
+  position: relative;
+}
+.main__wcu .main__wcu-img .abso-img {
+  position: absolute;
+  top: 15%;
+  right: -67%;
+}
+.main__wcu .main__wcu-desc {
+  margin-top: 50px;
+}
+.main__wcu .main__wcu-desc h2 {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+}
+.main__wcu .main__wcu-desc p {
+  color: #4f4f4f;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 24px;
+}
+.main__wcu .main__wcu-desc .desc-top {
+  margin-top: 20px;
+}
+.main__wcu .main__wcu-desc .desc-bot {
+  margin-top: 8px;
+}
+
+.wcu__advantage-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+.wcu__advantage-list .wcu__advantage-items {
+  padding: 5px 20px 0 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
+  gap: 20px;
+  align-items: center;
+}
+.wcu__advantage-list .wcu__advantage-items span {
+  color: #4f4f4f;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
 }/*# sourceMappingURL=main.css.map */

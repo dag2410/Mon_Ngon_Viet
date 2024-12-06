@@ -4,27 +4,26 @@
   gap: 190px;
 }
 // Main hero left
-
+.span-form {
+  color: $sub-color;
+  font-family: $font-note;
+  font-size: 18px;
+  line-height: 2.6;
+  position: relative;
+  &::before {
+    content: "";
+    bottom: 30%;
+    right: -30%;
+    position: absolute;
+    width: 2.7rem;
+    height: 0.1rem;
+    border-radius: 6px;
+    background: $sub-color;
+  }
+}
 .main__hero-left {
   margin-top: 150px;
 
-  span {
-    color: $sub-color;
-    font-family: $font-note;
-    font-size: 18px;
-    line-height: 2.6;
-    position: relative;
-    &::before {
-      content: "";
-      bottom: 30%;
-      right: -30%;
-      position: absolute;
-      width: 2.7rem;
-      height: 0.1rem;
-      border-radius: 6px;
-      background: $sub-color;
-    }
-  }
   h1 {
     // white-space: nowrap;
     margin-top: 8px;
@@ -109,23 +108,7 @@
   //// Main about us right
   .about-us--right {
     margin-top: 130px;
-    span {
-      color: $sub-color;
-      font-family: $font-note;
-      font-size: 1.8rem;
-      // line-height: 2.6;
-      position: relative;
-      &::before {
-        content: "";
-        bottom: 30%;
-        right: -60%;
-        position: absolute;
-        width: 3.1rem;
-        height: 0.1rem;
-        border-radius: 6px;
-        background: $sub-color;
-      }
-    }
+
     h2 {
       margin-top: 8px;
       color: $title-color;
@@ -265,5 +248,69 @@
     margin-top: 16px;
     font-family: $font-main;
     font-size: 1.6rem;
+  }
+}
+
+// ---------Main why choose us------------
+.main__wcu {
+  padding: 0 200px;
+  padding-bottom: 100px;
+  margin-top: 120px;
+  gap: 280px;
+  .main__wcu-img {
+    position: relative;
+    .abso-img {
+      position: absolute;
+      top: 15%;
+      right: -67%;
+    }
+  }
+  .main__wcu-desc {
+    margin-top: 50px;
+
+    h2 {
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 5.6rem;
+    }
+    p {
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+    .desc-top {
+      margin-top: 20px;
+    }
+    .desc-bot {
+      margin-top: 8px;
+    }
+  }
+}
+
+.wcu__advantage-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  .wcu__advantage-items {
+    padding: 5px 20px 0 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
+    // justify-content: center;
+    gap: 20px;
+    align-items: center;
+    span {
+      color: $desc-color;
+
+      font-family: $font-main;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
   }
 }
