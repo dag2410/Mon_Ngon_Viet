@@ -1,0 +1,753 @@
+// Main hero
+.main__hero {
+  padding: 0 200px 140px 200px;
+  gap: 190px;
+}
+// Main hero left
+.span-form {
+  color: $sub-color;
+  font-family: $font-note;
+  font-size: 18px;
+  line-height: 2.6;
+  position: relative;
+  &::before {
+    content: "";
+    bottom: 30%;
+    right: -30%;
+    position: absolute;
+    width: 2.7rem;
+    height: 0.1rem;
+    border-radius: 6px;
+    background: $sub-color;
+  }
+}
+.main__hero-left {
+  margin-top: 150px;
+
+  h1 {
+    // white-space: nowrap;
+    margin-top: 8px;
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+    word-spacing: 5px;
+    img {
+      position: absolute;
+      bottom: -15%;
+    }
+  }
+
+  p {
+    margin-top: 32px;
+    color: $desc-color;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .main__button {
+    margin-top: 31px;
+  }
+}
+.main__button-show:hover,
+.main__button-place:hover {
+  background: #fff;
+  color: $sub-color;
+  font-family: $font-sub;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+// Main hero right
+
+.main__hero-right {
+  position: relative;
+  .picture-main {
+    width: 600;
+    height: 565px;
+  }
+  .pic-top,
+  .pic-mid,
+  .pic-bottom {
+    position: absolute;
+    z-index: -1;
+  }
+  .pic-top {
+    top: -5%;
+    left: -20%;
+  }
+  .pic-mid {
+    bottom: -12%;
+    left: -25%;
+  }
+  .pic-bottom {
+    bottom: -25%;
+    left: 18%;
+  }
+}
+
+// Main about us
+.main__about-us {
+  margin-top: 130px;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 80px;
+  //// Main about us left
+  .about-us--left {
+    gap: 20px;
+    .about-us__image--sub {
+      margin-top: 35px;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  //// Main about us right
+  .about-us--right {
+    margin-top: 130px;
+
+    h2 {
+      margin-top: 8px;
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 1;
+      word-spacing: 3px;
+    }
+    p {
+      margin-top: 32px;
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+    span::before {
+      content: "";
+      bottom: 30%;
+      right: -60%;
+      position: absolute;
+      width: 2.7rem;
+      height: 0.1rem;
+      border-radius: 6px;
+      background: $sub-color;
+    }
+    button {
+      background: $sub-color;
+      color: #fff;
+      &:hover {
+        background: #fff;
+        color: $sub-color;
+        font-family: $font-sub;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.6;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+    }
+    .about-us__btn {
+      margin-top: 33px;
+      align-items: center;
+      gap: 16px;
+    }
+    .about-us__btn--watch {
+      gap: 10px;
+      align-items: center;
+      a {
+        color: $title-color;
+        font-family: $font-sub;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.4;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Main food category
+.main__food-category {
+  margin-top: 160px;
+  padding-left: 200px;
+  padding-right: 200px;
+  // pding btommm
+  // padding-bottom: 100px;
+  h2 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+  }
+  p {
+    margin-top: 15px;
+    color: $desc-color;
+    text-align: center;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+  ul {
+    position: relative;
+    margin-top: 55px;
+    gap: 24px;
+    .hover {
+      display: none;
+    }
+    .food-category--right,
+    .food-category--left {
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      border-radius: 4px;
+      background: rgba(25, 90, 0, 0.3);
+    }
+    .food-category--left {
+      position: absolute;
+      top: 33%;
+      left: -7%;
+      &:hover {
+        .integral {
+          display: none;
+        }
+        .hover {
+          display: block;
+        }
+        border-radius: 4px;
+        background: $sub-color;
+      }
+    }
+    .food-category--right {
+      position: absolute;
+      top: 33%;
+      right: -7%;
+      &:hover {
+        .integral {
+          display: none;
+        }
+        .hover {
+          display: block;
+        }
+        border-radius: 4px;
+        background: $sub-color;
+      }
+    }
+  }
+
+  h3 {
+    margin-top: 16px;
+    color: $desc-color;
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    color: $desc-color;
+    margin-top: 16px;
+    font-family: $font-main;
+    font-size: 1.6rem;
+  }
+}
+
+// ---------Main why choose us------------
+.main__wcu {
+  padding: 0 200px;
+  // padding-bottom: 100px;
+  margin-top: 120px;
+  gap: 280px;
+  .main__wcu-img {
+    position: relative;
+    .abso-img {
+      position: absolute;
+      top: 15%;
+      right: -67%;
+    }
+  }
+  .main__wcu-desc {
+    margin-top: 50px;
+
+    h2 {
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 5.6rem;
+    }
+    p {
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+    .desc-top {
+      margin-top: 20px;
+    }
+    .desc-bot {
+      margin-top: 8px;
+    }
+  }
+}
+
+.wcu__advantage-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  .wcu__advantage-items {
+    padding: 5px 20px 0 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
+    // justify-content: center;
+    gap: 20px;
+    align-items: center;
+    span {
+      color: $desc-color;
+
+      font-family: $font-main;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+  }
+}
+
+// ----------Main food menu------------
+.main__food-menu {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+
+  .main__food-menu--title {
+    h2 {
+      color: $title-color;
+      text-align: center;
+      font-family: $font-main;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 56px;
+    }
+    p {
+      margin-top: 8px;
+      color: $desc-color;
+      text-align: center;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
+
+  ul {
+    margin-top: 55px;
+    gap: 46px;
+    justify-content: center;
+    li {
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.8rem;
+      line-height: 28px;
+      position: relative;
+      &:hover {
+        color: $sub-color;
+        font-family: $font-sub;
+      }
+      &::after {
+        content: "";
+        background: $sub-color;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+  hr {
+    margin-top: 24px;
+    background: #e0e0e0;
+  }
+  .food-menu__list {
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 24px 24px;
+  }
+  button {
+    align-self: center;
+    margin-top: 50px;
+    &:hover {
+      background-color: $sub-color;
+      transition: background 0.2s ease-in-out;
+
+      color: #fff;
+    }
+  }
+}
+.food-menu__items {
+  position: relative;
+
+  justify-content: space-between;
+  align-items: center;
+  .food-menu__items--info {
+    h3 {
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 32px;
+      &:hover {
+        color: $sub-color;
+      }
+    }
+    p {
+      margin-top: 3px;
+      color: $desc-color;
+      font-family: $font-main;
+      font-size: 1.4rem;
+      text-align: left;
+    }
+    span {
+      margin-top: 3px;
+      color: #828282;
+      font-family: $font-main;
+      font-size: 1.3rem;
+      line-height: 24px;
+    }
+  }
+
+  .food-menu__items--price {
+    span {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      color: var(--Primary-color, #195a00);
+      font-family: $font-main;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+}
+.food-menu__items::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #e0e0e0;
+  border-bottom: 1px dotted #e0e0e0;
+}
+
+// --------------------Main team member------------------
+.main__team-member {
+  position: relative;
+  margin-top: 200px;
+  flex-direction: column;
+  // team member bgr
+  .team-member__bgr {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 400px;
+    }
+    .img-abs {
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 99;
+    }
+  }
+  // team member title
+  .team-member__title {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    z-index: 999;
+    align-self: center;
+    h2 {
+      color: #fff;
+      font-family: $font-main;
+      font-size: 4.4rem;
+      font-weight: 700;
+      line-height: 56px;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
+  // team member list
+  .team-member__list {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    ul {
+      position: absolute;
+      bottom: -55%;
+      gap: 35px;
+      text-align: center;
+
+      z-index: 1000;
+      li {
+        background: #fff;
+        box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
+        padding-bottom: 16px;
+      }
+      h3 {
+        margin-top: 10px;
+        color: $desc-color;
+        font-family: $font-main;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 28px;
+      }
+      span {
+        color: #828282;
+        font-family: $font-main;
+        font-size: 1.6rem;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+// ----------Main-Testimonials----------
+.main__testimonials {
+  width: 100%;
+  gap: 70px;
+  margin-top: 350px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  span::before {
+    content: "";
+    bottom: 30%;
+    right: -40%;
+  }
+  h2 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  p {
+    margin-top: 10px;
+    color: #828282;
+    font-family: $font-main;
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+}
+
+.testimonials__customer-info {
+  margin-top: 40px;
+  gap: 16px;
+  align-items: center;
+  h3 {
+    color: $desc-color;
+    font-family: $font-main;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  span {
+    color: #828282;
+    font-family: $font-main;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+}
+.testimonials__customer-form {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials__customer--vector-left,
+.testimonials__customer--vector-right {
+  .hover {
+    display: none;
+  }
+}
+.testimonials__customer--vector-left:hover,
+.testimonials__customer--vector-right:hover {
+  .integral {
+    display: none;
+  }
+  .hover {
+    display: block;
+  }
+}
+.main__testimonials-right {
+  position: relative;
+}
+.testimonials__order-now {
+  position: absolute;
+  bottom: -8%;
+  left: -5%;
+  width: 410px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+  .testimonials__price {
+    justify-content: space-between;
+    h3 {
+      color: $title-color;
+      font-family: $font-sub;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 28px;
+    }
+    span {
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+  p {
+    color: #828282;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+}
+
+// -------------Main BLog----------------
+.main__blog {
+  margin-top: 144px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+  h2 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  p {
+    margin-top: 8px;
+    color: $desc-color;
+    text-align: center;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  ul {
+    margin-top: 55px;
+    gap: 24px;
+  }
+  li {
+    box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
+    padding: 0 16px 25px 16px;
+    .blog__meta {
+      gap: 16px;
+      margin-top: 20px;
+      .blog__meta--date {
+        align-items: center;
+        gap: 8px;
+        span {
+          color: $title-color;
+          font-family: $font-main;
+          font-size: 1.3rem;
+          line-height: 24px;
+          opacity: 0.6;
+        }
+      }
+      .blog__meta--comments {
+        align-items: center;
+        gap: 8px;
+        span {
+          color: $title-color;
+          font-family: $font-main;
+          font-size: 1.3rem;
+          line-height: 24px;
+          opacity: 0.6;
+        }
+      }
+    }
+
+    h3 {
+      margin-top: 12px;
+      text-align: left;
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 1.7rem;
+      font-weight: 700;
+      line-height: 28px;
+    }
+    p {
+      width: 100%;
+      color: $desc-color;
+      font-family: $font-main;
+      font-size: 1.2rem;
+      line-height: 24px;
+      text-align: left;
+    }
+    .blog__read-more {
+      span {
+        color: $desc-color;
+        font-family: Helvetica;
+        font-size: 1.4rem;
+        line-height: 22px;
+      }
+      margin-top: 16px;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+}
+
+// ----------Main Partners & Clients------------
+.main__c-a-p {
+  margin-top: 140px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  span {
+    color: $sub-color;
+    font-family: $font-note;
+    font-size: 1.8rem;
+    line-height: 26px;
+  }
+  h2 {
+    margin-top: 5px;
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  ul {
+    margin-top: 55px;
+    gap: 30px;
+  }
+}

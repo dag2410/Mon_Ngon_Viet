@@ -1,0 +1,221 @@
+// ------------Menu Header---------
+
+.header__blog {
+  width: 100%;
+  max-width: 1920px;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 30px 200px;
+  background-color: #fff;
+  z-index: 99;
+  background: #0d0d0d;
+  // gap: 94px;
+  // .header__bgr {
+  // }
+  .logo {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 32px;
+    span {
+      color: $logo-sub-color;
+      font-family: $font-main;
+    }
+  }
+  .header__blog-icon {
+    z-index: 99;
+    gap: 16px;
+    .icon-form {
+      font-size: 16px;
+    }
+  }
+  .header__blog-nav {
+    gap: 32px;
+    a {
+      // padding: 8px 10px;
+      color: #fff;
+      display: inline-block;
+      font-family: $font-sub;
+      font-size: 1.6em;
+      line-height: 2.4;
+      position: relative;
+      text-align: center;
+      &:hover {
+        font-weight: 700;
+        color: $logo-sub-color;
+      }
+      &::before {
+        content: attr(title);
+        display: block;
+        font-weight: 700;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.main__blog-title {
+  width: 100%;
+  max-width: 1920px;
+  height: 360px;
+  background-image: url(/assets/img/bgr-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 56px;
+    z-index: 99;
+  }
+  .main__blog-breadcrumb {
+    z-index: 99;
+    margin-top: 20px;
+    gap: 5px;
+    align-items: center;
+    span {
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 2rem;
+      line-height: 28px;
+    }
+    .link-page {
+      color: $logo-sub-color;
+      font-family: $font-sub;
+      font-size: 2rem;
+      line-height: 28px;
+    }
+  }
+}
+
+// --------Main blog content-------
+.main__blog-content {
+  margin-top: 120px;
+  padding-left: 200px;
+  padding-right: 200px;
+  .main__blog-list {
+    width: 65%;
+    flex-direction: column;
+    gap: 55px;
+  }
+  .main__blog-items {
+    position: relative;
+    .main__blog-meta {
+      margin-top: 16px;
+      align-items: center;
+      gap: 7px;
+      span {
+        color: $desc-color;
+        font-family: $font-sub;
+        font-size: 1.3rem;
+        line-height: 24px;
+      }
+    }
+
+    h3 {
+      position: relative;
+      margin-top: 16px;
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 32px;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -20px;
+        background-color: #828282;
+        opacity: 0.17;
+        width: 694.031px;
+        height: 1px;
+      }
+    }
+    p {
+      margin-top: 40px;
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+    button {
+      margin-top: 24px;
+      border-radius: 6px;
+      border: 1px solid $logo-sub-color;
+      background-color: #fff;
+      color: var(--Primary-color, #ff9f0d);
+      font-family: $font-main;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 24px;
+      padding: 14px 32px;
+    }
+    .main__blog-img {
+      width: 100%;
+    }
+    .blog__calender--abso {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border-radius: 6px;
+      background: $logo-sub-color;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 99;
+      .calendar-abso {
+        color: $page-color;
+        font-family: $font-sub;
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+      .month {
+        color: $page-color;
+        font-family: $font-sub;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+.main__blog-plink {
+  margin-top: 50px;
+  align-self: center;
+  ul {
+    gap: 14px;
+
+    li {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: $page-color;
+      color: $logo-sub-color;
+      border: 2px solid #f2f2f2;
+      border-radius: 2px;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+      transition: background-color 0.3s;
+      &:hover {
+        color: $page-color;
+        background-color: $logo-sub-color;
+      }
+    }
+    a {
+      padding: 20px;
+    }
+  }
+}

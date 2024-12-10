@@ -1,0 +1,147 @@
+.footer__home {
+  width: 100%;
+  background-color: var(--Disable-green, rgba(168, 188, 161, 0.3));
+  padding: 120px 200px 188px 200px;
+  flex-direction: column;
+  position: relative;
+  margin-top: 100px;
+}
+.footer__section {
+  justify-content: space-between;
+}
+.footer__copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $sub-color;
+}
+.footer__newsletter {
+  h3 {
+    color: #000;
+    font-family: $font-main;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  span {
+    color: $sub-color;
+    font-family: $font-main;
+    font-size: 2.4erm;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  p {
+    margin-top: 20px;
+    color: $title-color;
+    font-family: $font-sub;
+    font-size: 1.8rem;
+    line-height: 26px;
+  }
+  form {
+    margin-top: 20px;
+    position: relative;
+  }
+  input {
+    padding: 12px;
+    border-radius: 6px;
+    background: #fff;
+    width: 242px;
+    height: 40px;
+    border: none;
+    outline: none;
+  }
+  button {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 6px 6px 0px;
+    background: $sub-color;
+  }
+  ul {
+    margin-top: 24px;
+    gap: 16px;
+  }
+}
+.footer__contact {
+  gap: 16px;
+  flex-direction: column;
+  h3 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 28px;
+    & + div {
+      margin-top: 8px;
+    }
+  }
+  .footer__contact-items {
+    align-items: center;
+    gap: 8px;
+    p {
+      color: $title-color;
+      font-family: $font-sub;
+      font-size: 1.5rem;
+      line-height: 26px;
+    }
+  }
+}
+.footer__links {
+  h3 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  ul {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  li {
+    color: $title-color;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+}
+.footer__instagram {
+  h3 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .footer__instagram--gallery {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.footer__copyright {
+  padding: 22px 200px;
+  justify-content: space-between;
+  p {
+    color: #fff;
+    font-family: $font-main;
+    font-size: 1.3rem;
+    line-height: 24px;
+  }
+  ul {
+    gap: 40px;
+  }
+  li {
+    color: #fff;
+    font-family: $font-main;
+    font-size: 1.3rem;
+    line-height: 24px;
+  }
+}

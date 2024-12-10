@@ -133,6 +133,8 @@ a {
 }
 button {
   border: none;
+
+  cursor: pointer;
 }
 * {
   box-sizing: border-box;
@@ -142,5 +144,5 @@ html {
 }
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1680px;
 }
