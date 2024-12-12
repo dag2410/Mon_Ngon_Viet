@@ -53,7 +53,7 @@
 }
 .main__button-show:hover,
 .main__button-place:hover {
-  background: #fff;
+  background: $page-color;
   color: $sub-color;
   font-family: $font-sub;
   font-size: 1.8rem;
@@ -137,9 +137,9 @@
     }
     button {
       background: $sub-color;
-      color: #fff;
+      color: $page-color;
       &:hover {
-        background: #fff;
+        background: $page-color;
         color: $sub-color;
         font-family: $font-sub;
         font-size: 1.8rem;
@@ -203,6 +203,7 @@
     }
     .food-category--right,
     .food-category--left {
+      cursor: pointer;
       justify-content: center;
       align-items: center;
       position: absolute;
@@ -216,6 +217,7 @@
       top: 33%;
       left: -7%;
       &:hover {
+        transition: background-color 0.3s ease;
         .integral {
           display: none;
         }
@@ -231,6 +233,7 @@
       top: 33%;
       right: -7%;
       &:hover {
+        transition: background-color 0.3s ease;
         .integral {
           display: none;
         }
@@ -309,7 +312,7 @@
   .wcu__advantage-items {
     padding: 5px 20px 0 20px;
     border-radius: 6px;
-    background: #fff;
+    background: $page-color;
     box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
     // justify-content: center;
     gap: 20px;
@@ -383,7 +386,7 @@
   }
   hr {
     margin-top: 24px;
-    background: #e0e0e0;
+    background: $after-color;
   }
   .food-menu__list {
     margin-top: 58px;
@@ -399,7 +402,7 @@
       background-color: $sub-color;
       transition: background 0.2s ease-in-out;
 
-      color: #fff;
+      color: $page-color;
     }
   }
 }
@@ -428,7 +431,7 @@
     }
     span {
       margin-top: 3px;
-      color: #828282;
+      color: $desc-color-sub;
       font-family: $font-main;
       font-size: 1.3rem;
       line-height: 24px;
@@ -453,8 +456,8 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: #e0e0e0;
-  border-bottom: 1px dotted #e0e0e0;
+  background: $after-color;
+  border-bottom: 1px dotted $after-color;
 }
 
 // --------------------Main team member------------------
@@ -485,14 +488,14 @@
     z-index: 999;
     align-self: center;
     h2 {
-      color: #fff;
+      color: $page-color;
       font-family: $font-main;
       font-size: 4.4rem;
       font-weight: 700;
       line-height: 56px;
     }
     p {
-      color: #fff;
+      color: $page-color;
       text-align: center;
       font-family: $font-sub;
       font-size: 1.6rem;
@@ -512,7 +515,7 @@
 
       z-index: 1000;
       li {
-        background: #fff;
+        background: $page-color;
         box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
         padding-bottom: 16px;
       }
@@ -525,7 +528,7 @@
         line-height: 28px;
       }
       span {
-        color: #828282;
+        color: $desc-color-sub;
         font-family: $font-main;
         font-size: 1.6rem;
         line-height: 24px;
@@ -556,7 +559,7 @@
   }
   p {
     margin-top: 10px;
-    color: #828282;
+    color: $desc-color-sub;
     font-family: $font-main;
     font-size: 1.3rem;
     line-height: 20px;
@@ -575,7 +578,7 @@
     line-height: 26px;
   }
   span {
-    color: #828282;
+    color: $desc-color-sub;
     font-family: $font-main;
     font-size: 1.6rem;
     line-height: 24px;
@@ -612,7 +615,7 @@
   height: 200px;
   flex-shrink: 0;
   border-radius: 6px;
-  background: #fff;
+  background: $page-color;
   padding: 30px;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
   .testimonials__price {
@@ -633,7 +636,7 @@
     }
   }
   p {
-    color: #828282;
+    color: $desc-color-sub;
     font-family: $font-sub;
     font-size: 1.6rem;
     line-height: 24px;

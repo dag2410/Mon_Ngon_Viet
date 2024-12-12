@@ -1,3 +1,4 @@
+// Footer home
 .footer__home {
   width: 100%;
   background-color: var(--Disable-green, rgba(168, 188, 161, 0.3));
@@ -143,5 +144,220 @@
     font-family: $font-main;
     font-size: 1.3rem;
     line-height: 24px;
+  }
+}
+
+// Footer Pages
+
+// ---------footer menu---------
+footer {
+  margin-top: 120px;
+  background-color: #0d0d0d;
+  position: relative;
+  padding: 80px 200px 148px 200px;
+}
+.footer__support-inquiry {
+  position: relative;
+
+  justify-content: space-around;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -32px;
+    height: 1px;
+    padding: 0;
+    width: 90%;
+    background-color: $logo-sub-color;
+  }
+  .footer__support--title {
+    h2 {
+      color: $page-color;
+      font-family: $font-main;
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    span {
+      color: $logo-sub-color;
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    p {
+      margin-top: 15px;
+      color: $page-color;
+      font-family: $font-main;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
+  form {
+    position: relative;
+    align-items: center;
+  }
+  input {
+    width: 400px;
+    background-color: $logo-sub-color;
+    padding: 19px;
+    border: none;
+    outline: none;
+
+    border-radius: 3px;
+    &::placeholder {
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+      opacity: 0.59;
+    }
+  }
+  button {
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 15px 24px;
+    background-color: $page-color;
+    color: $logo-sub-color;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border-radius: 3px;
+  }
+}
+.footer__content {
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.footer__about-us {
+  h3 {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  p {
+    margin-top: 30px;
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 1.8rem;
+    line-height: 26px;
+  }
+}
+.footer__opening-hours {
+  margin-top: 24px;
+  gap: 18px;
+  .footer__opening-hours-info {
+    h3 {
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 1.8rem;
+      line-height: 26px;
+    }
+    div {
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 1.4rem;
+      line-height: 22px;
+    }
+  }
+}
+.footer__useful-links,
+.footer__help {
+  h3 {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  ul {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 16px;
+    li {
+      color: #fff;
+      font-family: $font-main;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
+}
+.footer__recent-posts {
+  h3 {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  ul {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+    li {
+      align-items: center;
+      gap: 16px;
+    }
+  }
+  .recent-post--right {
+    p {
+      color: $page-color;
+      font-family: $font-main;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+    span {
+      color: $page-color;
+      font-family: $font-main;
+      font-size: 1.4rem;
+      line-height: 22px;
+      opacity: 0.49;
+    }
+  }
+}
+
+.footer__bottom {
+  padding: 30px 200px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  background: $desc-color;
+  p {
+    color: $page-color;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  a {
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+
+  .footer__social-media {
+    gap: 14px;
+  }
+}
+.footer__social-media--list {
+  .hover {
+    display: none;
+  }
+  &:hover {
+    .integral {
+      display: none;
+    }
+    .hover {
+      display: block;
+    }
   }
 }

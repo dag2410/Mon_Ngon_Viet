@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/fav_icon_Mon_Ngon_viet.jpg"
+    />
+    <!-- Thêm favicon -->
+    <title>Món Ngon Việt</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header shop -->
+      <header class="header-form d-flex">
+        <a href="./index.html" class="logo"> Food<span>tuck</span> </a>
+
+        <nav>
+          <ul class="header-nav d-flex">
+            <li>
+              <a href="./index.html" title="Home">Home</a>
+            </li>
+            <li>
+              <a href="./menu.html" title="Menu">Menu</a>
+            </li>
+            <li>
+              <a href="./blog.html" title="Blog">Blog</a>
+            </li>
+            <li>
+              <a href="/about.html" title="About">About</a>
+            </li>
+            <li>
+              <a href="/shop.html" title="Shop">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-icon d-flex">
+          <div class="icon__search">
+            <a href="#!">
+              <img src="./assets/img/icon-search-sub.png" alt="search"
+            /></a>
+          </div>
+          <div class="icon__profile">
+            <a href="#!">
+              <img src="./assets/img/icon-user-sub.png" alt="user"
+            /></a>
+          </div>
+          <div class="icon__cart">
+            <a href="#!">
+              <img src="./assets/img/icon-cart-sub.png" alt="cart"
+            /></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main shop -->
+      <main>
+        <div class="main__shop d-flex">
+          <a href="#!">
+            <h2>Our Shop</h2>
+          </a>
+          <div class="main__shop-breadcrumb d-flex">
+            <a href="/index.html">
+              <span>Home</span>
+            </a>
+            <img
+              src="./assets/img/CaretRight--white.png"
+              alt="CaretRight"
+              width="16"
+              height="16"
+            />
+            <a href="/shop.html">
+              <span class="link-page">Shop</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="main__shop-container">
+          <div class="shop__filter d-flex">
+            <div class="shop__filter-sb">
+              <label for="sort-by">Sort By:</label>
+              <select id="sort-by" class="dropdown">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="highest-rated">Highest Rated</option>
+              </select>
+            </div>
+            <div class="shop__filter-show">
+              <label for="show">Show:</label>
+              <select id="show" class="dropdown">
+                <option value="default">Default</option>
+                <option value="popular">Popular</option>
+                <option value="recent">Recent</option>
+              </select>
+            </div>
+          </div>
+          <div class="main__shop-content d-flex">
+            <div class="main__shop-list-link d-flex">
+              <div class="main__shop-list">
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!"> <h3>Fresh Lime</h3></a>
+                  <div class="shop__item-price d-flex">
+                    <span>$38.00 </span>
+                    <span class="list-price">$45.00</span>
+                  </div>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Chocolate Muffin</h3>
+                  </a>
+
+                  <span>$28.00 </span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Burger</h3>
+                  </a>
+
+                  <div class="shop__item-price d-flex">
+                    <span> $21.00</span>
+                    <span class="list-price">$45.00</span>
+                  </div>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Country Burger</h3>
+                  </a>
+                  <span> $45.00</span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Drink</h3>
+                  </a>
+                  <div class="shop__item-price d-flex">
+                    <span> $23.00</span>
+                    <span class="list-price">$45.00</span>
+                  </div>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Pizza</h3>
+                  </a>
+                  <span>$43.00 </span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Cheese Butter</h3>
+                  </a>
+                  <span> $10.00</span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Sandwiches</h3>
+                  </a>
+                  <span>$25.00 </span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Chicken Chup</h3>
+                  </a>
+                  <span>$12.00 </span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Country Burger</h3>
+                  </a>
+                  <span>$45.00 </span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Drink</h3>
+                  </a>
+                  <div class="shop__item-price d-flex">
+                    <span> $23.00</span>
+                    <span class="list-price">$45.00</span>
+                  </div>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Pizza</h3>
+                  </a>
+                  <span>$43.00 </span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Cheese Butter</h3>
+                  </a>
+                  <span>$10.00 </span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Sandwiches</h3>
+                  </a>
+                  <span> $25.00</span>
+                </div>
+
+                <div class="main__shop-items d-flex">
+                  <a href="#!"
+                    ><img
+                      src="./assets/img/FreshLime.png"
+                      alt=""
+                      width="230"
+                      height="200"
+                  /></a>
+                  <a href="#!">
+                    <h3>Chicken Chup</h3>
+                  </a>
+                  <span>$12.00 </span>
+                </div>
+              </div>
+              <div class="main__plink">
+                <ul class="d-flex">
+                  <li class="d-flex">
+                    <a href="#!">&lt;&lt;</a>
+                  </li>
+                  <li class="d-flex">
+                    <a href="#!">1</a>
+                  </li>
+                  <li class="d-flex">
+                    <a href="#!">2</a>
+                  </li>
+                  <li class="d-flex">
+                    <a href="#!">3</a>
+                  </li>
+                  <li class="d-flex">
+                    <a href="#!">&gt;&gt;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- ------------------aside shop--------------- -->
+            <aside class="aside__shop">
+              <form class="d-flex">
+                <input type="text" placeholder="Search Product" />
+                <button>
+                  <img
+                    src="./assets/img/btn-search.png"
+                    alt="search"
+                    width="24"
+                    height="24"
+                  />
+                </button>
+              </form>
+
+            <!-- ------------------aside checkbox--------------- -->
+              <div class="aside__checkbox d-flex">
+                <h3>Category</h3>
+
+                <label class="aside__checkbox-item d-flex">
+                  <input type="checkbox" name="category" value="sandwiches" />
+                  Sandwiches
+                </label>
+                <label class="aside__checkbox-item d-flex">
+                  <input type="checkbox" name="category" value="burger" />
+                  Burger
+                </label>
+                <label class="aside__checkbox-item d-flex">
+                  <input type="checkbox" name="category" value="chicken-chup" />
+                  Chicken Chup
+                </label>
+                <label class="aside__checkbox-item d-flex">
+                  <input type="checkbox" name="category" value="drink" /> Drink
+                </label>
+                <label class="aside__checkbox-item d-flex">
+                  <input type="checkbox" name="category" value="pizza" /> Pizza
+                </label>
+                <label class="aside__checkbox-item d-flex">
+                  <input type="checkbox" name="category" value="thi" /> Thi
+                </label>
+                <label class="aside__checkbox-item d-flex">
+                  <input type="checkbox" name="category" value="non-veg" /> Non
+                  Veg
+                </label>
+                <label class="aside__checkbox-item d-flex">
+                  <input
+                    type="checkbox"
+                    name="category"
+                    value="uncategorized"
+                  />
+                  Uncategorized
+                </label>
+              </div>
+
+            <!-- ------------------aside banner--------------- -->
+              <div class="aside__shop-banner">
+                <img src="./assets/img/aside-shop-banner.png" alt="banner" />
+                <div class="shop__banner-title d-flex">
+                  <a href="#!"> <h3>Perfect Taste</h3> </a>
+                  <a href="#!">
+                    <h2>Classic Restaurant</h2>
+                  </a>
+                  <span>45.00$</span>
+                </div>
+                <div class="shop__banner-shop-now d-flex">
+                  <a href="#!">
+                    <span>Shop Now</span>
+                  </a>
+
+                  <img
+                    src="./assets/img/ArrowCircleRight-shop.png"
+                    alt="Arrow Circle Right"
+                  />
+                </div>
+              </div>
+
+               <!-- ------------------aside f-b-p--------------- -->
+              <div class="aside__f-b-p">
+                <h3>Filter By Price</h3>
+                <a href="#!">
+                  <img src="./assets/img/price_renge.png" alt="price_renge" />
+                </a>
+                <div class="f-b-p__filter">
+                  <span>From $0 to $8000</span>
+                  <span>Filter</span>
+                </div>
+              </div>
+
+                <!-- ------------------aside last products--------------- -->
+              <div class="aside__last-products">
+                <h3>Latest Products</h3>
+                <ul class="d-flex">
+                  <li class="d-flex">
+                     <a href="#!"><img src="./assets/img/aside-last-pro.png" alt="last-pro" /></a>
+                    <div class="last-product__info d-flex">
+                      <a href="#!">
+                        <span>Pizza</span>
+                      </a>
+                      <img src="./assets/img/aside_star.png" alt="star" />
+                      <a href="#!">
+                        <span>$35.00</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                     <a href="#!"><img src="./assets/img/aside-last-pro.png" alt="last-pro" /></a>
+                    <div class="last-product__info d-flex">
+                      <a href="#!">
+                        <span>Cupchake</span>
+                      </a>
+                      <img src="./assets/img/aside_star.png" alt="star" />
+                      <a href="#!">
+                        <span>$35.00</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                     <a href="#!"><img src="./assets/img/aside-last-pro.png" alt="last-pro" /></a>
+                    <div class="last-product__info d-flex">
+                      <a href="#!">
+                        <span>Cookies</span>
+                      </a> 
+                      <img src="./assets/img/aside_star.png" alt="star" />
+                      <a href="#!"
+                      <span>$35.00</span>></a> 
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                     <a href="#!"><img src="./assets/img/aside-last-pro.png" alt="last-pro" /></a>
+                    <div class="last-product__info d-flex">
+                      <a href="#!">
+                        <span>Burger</span>
+                      </a> 
+                      <img src="./assets/img/aside_star.png" alt="star" />
+                      <a href="#!">
+                        <span>$35.00</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+                  <!-- ------------------aside product tags--------------- -->
+
+              <div class="aside__product-tags">
+                <h3>Product Tags</h3>
+                <div class="product-tags__list">
+                  <div class="product-tags__item">
+                    <a href="#!">Services</a>
+                  </div>
+                  <div class="product-tags__item">
+                    <a href="#!">Our Menu</a>
+                  </div>
+                  <div class="product-tags__item"><a href="#!">Pizza</a></div>
+                  <div class="product-tags__item"><a href="#!">Cupcake</a></div>
+                  <div class="product-tags__item"><a href="#!">Burger</a></div>
+                  <div class="product-tags__item"><a href="#!">Cookies</a></div>
+                  <div class="product-tags__item">
+                    <a href="#!">Our Shop</a>
+                  </div>
+                  <div class="product-tags__item col-2">
+                    <a href="#!">Tandoori Chicken</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer__support-inquiry d-flex">  
+          <div class="footer__support--title">
+            <h2><span>St</span>ill You Need Our Support?</h2>
+            <p>
+              Don't wait, make a smart & logical quote here. It's pretty easy.
+            </p>
+          </div>
+
+          <form class="d-flex">
+            <input type="email" placeholder="Enter Your Email" />
+            <button type="submit">Subscribe Now</button>
+          </form>
+        </div>
+
+        <div class="footer__content d-flex">
+          <div class="footer__about-us">
+            <h3>About Us.</h3>
+            <p>
+              orporate clients and leisure travelers hasbeen <br />
+              relying on Groundlink for dependablesafe, and <br />
+              professional chauffeured carservice in major <br />
+              cities across World.
+            </p>
+            <div class="footer__opening-hours d-flex">
+              <img
+                src="./assets/img/footer-clock.png"
+                alt="Clock"
+                width="70"
+                height="70"
+              />
+              <div class="footer__opening-hours-info">
+                <h3>Opening Houres</h3>
+                <div>Mon - Sat: 9.00 - 6.00</div>
+                <div>Sunday - Closed</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__useful-links">
+            <h3>Useful Links</h3>
+            <ul class="d-flex">
+              <li><a href="#!">About</a></li>
+              <li><a href="#!">News</a></li>
+              <li><a href="#!">Partners</a></li>
+              <li><a href="#!">Team</a></li>
+              <li><a href="#!">Menu</a></li>
+              <li><a href="#!">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__help">
+            <h3>Help?</h3>
+            <ul class="d-flex">
+              <li><a href="#!">FAQ</a></li>
+              <li><a href="#!">Terms & Conditions</a></li>
+              <li><a href="#!">Reporting</a></li>
+              <li><a href="#!">Documentation</a></li>
+              <li><a href="#!">Support Policy</a></li>
+              <li><a href="#!">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="footer__recent-posts">
+            <h3>Recent Posts</h3>
+            <ul class="d-flex">
+              <li class="d-flex">
+                <a href="#">
+                  <img
+                    src="./assets/img/pic-about-sub.png"
+                    alt="Post Image"
+                    width="80"
+                    height="80"
+                  />
+                </a>
+                <div class="recent-post--right">
+                  <a href="#!">
+                    <p>Is fast food good for <br />your body?</p>
+                  </a>
+                  <a href="#!">
+                    <span>February 28, 2022</span>
+                  </a>
+                </div>
+              </li>
+              <li class="d-flex">
+                <a href="#">
+                  <img
+                    src="./assets/img/pic-about-sub.png"
+                    alt="Post Image"
+                    width="80"
+                    height="80"
+                  />
+                </a>
+                <div class="recent-post--right">
+                  <a href="#!">
+                    <p>
+                      Change your food habit <br />
+                      With organic food
+                    </p></a
+                  >
+                  <a href="#!">
+                    <span>February 28, 2022</span>
+                  </a>
+                </div>
+              </li>
+              <li class="d-flex">
+                <a href="#">
+                  <img
+                    src="./assets/img/pic-about-sub.png"
+                    alt="Post Image"
+                    width="80"
+                    height="80"
+                  />
+                </a>
+                <div class="recent-post--right">
+                  <a href="#!">
+                    <p>
+                      Do you like fastfood for <br />
+                      your life?
+                    </p></a
+                  >
+                  <a href="#!">
+                    <span>February 28, 2022</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom d-flex">
+          <p>Copyright © 2022 by Ayeman. All Rights Reserved.</p>
+          <div class="footer__social-media d-flex">
+            <div class="footer__social-media--list">
+              <a href="#!" class="d-flex integral"
+                ><img src="assets/img/icon-facebook.png" alt="Facebook" /></a
+              ><a href="#!" class="d-flex hover"
+                ><img src="assets/img/icon-facebook-hover.png" alt="Facebook"
+              /></a>
+            </div>
+
+            <div class="footer__social-media--list">
+              <a href="#!" class="d-flex integral"
+                ><img src="./assets/img/icon-twitter.png" alt="Twitter"
+              /></a>
+              <a href="#!" class="d-flex hover"
+                ><img src="./assets/img/icon-twitter-hover.png" alt="Twitter"
+              /></a>
+            </div>
+
+            <div class="footer__social-media--list">
+              <a href="#!" class="d-flex integral"
+                ><img src="./assets/img/icon-youtube.png" alt="YouTube" /></a
+              ><a href="#!" class="d-flex hover"
+                ><img src="./assets/img/icon-youtube-hover.png" alt="YouTube"
+              /></a>
+            </div>
+            <div class="footer__social-media--list">
+              <a href="#!" class="d-flex integral"
+                ><img src="./assets/img/icon-insta.png" alt="Instagram"
+              /></a>
+              <a href="#!" class="d-flex hover"
+                ><img src="./assets/img/icon-insta-hover.png" alt="Instagram"
+              /></a>
+            </div>
+            <div class="footer__social-media--list">
+              <a href="#!" class="d-flex integral"
+                ><img src="./assets/img/icon-pinterest.png" alt="Pinterest"
+              /></a>
+              <a href="#!" class="d-flex hover"
+                ><img
+                  src="./assets/img/icon-pinterest-hover.png"
+                  alt="Pinterest"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

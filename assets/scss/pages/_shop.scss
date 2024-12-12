@@ -1,0 +1,317 @@
+// Main shop
+.main__shop {
+  width: 100%;
+  max-width: 1920px;
+  height: 360px;
+  background-image: url(/assets/img/bgr-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 56px;
+    z-index: 99;
+  }
+  .main__shop-breadcrumb {
+    z-index: 99;
+    margin-top: 20px;
+    gap: 5px;
+    align-items: center;
+    span {
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 2rem;
+      line-height: 28px;
+    }
+    .link-page {
+      color: $logo-sub-color;
+      font-family: $font-sub;
+      font-size: 2rem;
+      line-height: 28px;
+    }
+  }
+}
+
+.main__shop-container {
+  margin-top: 120px;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 24px;
+}
+.shop__filter {
+  gap: 30px;
+  label {
+    color: $title-color;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 28px;
+  }
+  select {
+    width: 200px;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid $border-color;
+    color: $desc-color-sub;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    line-height: 26px;
+    outline: none;
+  }
+}
+.main__shop-list-link {
+  flex-direction: column;
+}
+
+.main__shop-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin-top: 24px;
+  gap: 22px 22px;
+}
+.main__shop-items {
+  flex-direction: column;
+  gap: 4px;
+  h3 {
+    margin-top: 8px;
+    color: $title-color;
+    font-family: $font-sub;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  span {
+    color: $logo-sub-color;
+    font-family: $font-sub;
+    font-size: 1.4rem;
+    line-height: 24px;
+  }
+  .list-price {
+    color: $desc-color-sub;
+    font-family: $font-sub;
+  }
+}
+.shop__item-price {
+  gap: 8px;
+}
+.main__shop-p {
+  margin-top: 50px;
+  align-self: center;
+  ul {
+    gap: 14px;
+
+    li {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: $page-color;
+      color: $logo-sub-color;
+      border: 2px solid #f2f2f2;
+      border-radius: 2px;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+      transition: background-color 0.3s;
+      &:hover {
+        color: $page-color;
+        background-color: $logo-sub-color;
+      }
+    }
+    a {
+      padding: 20px;
+    }
+  }
+}
+.main__shop-content {
+  gap: 24px;
+}
+.aside__shop {
+  height: 100%;
+  margin-top: 24px;
+  padding: 24px 30px;
+  border-radius: 6px;
+  border: 1px solid #f2f2f2;
+  form {
+    input {
+      padding: 15px;
+      background: rgba(255, 159, 13, 0.1);
+      border: none;
+      outline: none;
+    }
+    button {
+      width: 50px;
+      height: 48px;
+      background-color: $logo-sub-color;
+    }
+  }
+  h3 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 28px;
+  }
+}
+.aside__checkbox {
+  gap: 16px;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.aside__checkbox-item {
+  align-items: center;
+  color: $title-color;
+  font-family: $font-main;
+  font-size: 1.6rem;
+
+  input {
+    padding: 0;
+  }
+}
+.aside__checkbox-item input {
+  margin-right: 10px;
+  display: inline;
+}
+.aside__shop-banner {
+  margin-top: 24px;
+}
+.aside__shop-banner {
+  position: relative;
+  .shop__banner-title {
+    flex-direction: column;
+    height: 100px;
+    position: absolute;
+    top: 29px;
+    left: 23px;
+    z-index: 99;
+    height: 2px;
+    gap: 10px;
+    h3 {
+      margin: 0;
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 24px;
+    }
+    h2 {
+      color: $page-color;
+      font-family: $font-main;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 28px;
+    }
+    span {
+      color: $logo-sub-color;
+      font-family: $font-sub;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+  .shop__banner-shop-now {
+    position: absolute;
+    bottom: 31px;
+    left: 23px;
+    align-items: center;
+    gap: 8px;
+    span {
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
+}
+.aside__f-b-p {
+  margin-top: 24px;
+  h3 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .f-b-p__filter {
+    margin-top: 8px;
+
+    span {
+      color: #0d0d0d;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+      opacity: 0.61;
+    }
+  }
+}
+.aside__last-products {
+  margin-top: 24px;
+  h3 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  ul {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  li {
+    gap: 16px;
+  }
+}
+
+.last-product__info {
+  flex-direction: column;
+  justify-content: space-between;
+  span {
+    color: $desc-color;
+    font-family: $font-main;
+    font-size: 1.4rem;
+    line-height: 24px;
+  }
+}
+
+.aside__product-tags {
+  margin-top: 24px;
+  .product-tags__list {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 18px 16px;
+    text-align: center;
+
+    .product-tags__item a {
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.4rem;
+      line-height: 24px;
+      position: relative;
+      width: 100%;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        transform: translate(0, -50%);
+        background: #f2f2f2;
+        bottom: -5px;
+        left: 0;
+      }
+    }
+    .col-2 {
+      grid-column: 2/4;
+    }
+  }
+}

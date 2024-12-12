@@ -2,7 +2,7 @@
 .d-flex {
   display: flex;
 }
-.header {
+.home__header {
   align-items: center;
   position: relative;
   justify-content: space-between;
@@ -11,14 +11,14 @@
   // gap: 94px;
   // .header__bgr {
   // }
-  .header__icon {
+  .home__header-icon {
     z-index: 99;
     gap: 16px;
     .icon-form {
       font-size: 16px;
     }
   }
-  .header__nav {
+  .home__header-nav {
     margin-right: 300px;
     gap: 32px;
     a {
@@ -54,6 +54,68 @@
       }
       &:hover::after {
         width: 24px;
+      }
+    }
+  }
+}
+
+// header
+
+// ------------Menu Header---------
+
+.header-form {
+  width: 100%;
+  max-width: 1920px;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 30px 200px;
+  background-color: $page-color;
+  z-index: 99;
+  background: #0d0d0d;
+  // gap: 94px;
+  // .header__bgr {
+  // }
+  .logo {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 32px;
+    span {
+      color: $logo-sub-color;
+      font-family: $font-main;
+    }
+  }
+  .header-icon {
+    z-index: 99;
+    gap: 16px;
+    .icon-form {
+      font-size: 16px;
+    }
+  }
+  .header-nav {
+    gap: 32px;
+    a {
+      // padding: 8px 10px;
+      color: $page-color;
+      display: inline-block;
+      font-family: $font-sub;
+      font-size: 1.6em;
+      line-height: 2.4;
+      position: relative;
+      text-align: center;
+      &:hover {
+        font-weight: 700;
+        color: $logo-sub-color;
+      }
+      &::before {
+        content: attr(title);
+        display: block;
+        font-weight: 700;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
       }
     }
   }

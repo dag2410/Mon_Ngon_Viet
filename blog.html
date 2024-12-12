@@ -34,11 +34,10 @@
   <body>
     <div class="container">
       <!-- Header blog -->
-      <header class="header__blog d-flex">
+      <header class="header-form d-flex">
         <a href="./index.html" class="logo"> Food<span>tuck</span> </a>
-
         <nav>
-          <ul class="header__blog-nav d-flex">
+          <ul class="header-nav d-flex">
             <li>
               <a href="./index.html" title="Home">Home</a>
             </li>
@@ -49,15 +48,15 @@
               <a href="./blog.html" title="Blog">Blog</a>
             </li>
             <li>
-              <a href="#!" title="About">About</a>
+              <a href="/about.html" title="About">About</a>
             </li>
             <li>
-              <a href="#!" title="Shop">Shop</a>
+              <a href="/shop.html" title="Shop">Shop</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header__blog-icon d-flex">
+        <div class="header-icon d-flex">
           <div class="icon__search">
             <a href="#!">
               <img src="./assets/img/icon-search-sub.png" alt="search"
@@ -75,30 +74,38 @@
           </div>
         </div>
       </header>
+
       <!-- Main blog -->
       <main>
-        <div class="main__blog-title d-flex">
+        <div class="main__bgr d-flex">
           <h2>BLog List</h2>
-          <div class="main__blog-breadcrumb d-flex">
-            <span>Home</span>
+          <div class="main__bgr-breadcrumb d-flex">
+            <a href="./index.html">
+              <span>Home</span>
+            </a>
             <img
               src="./assets/img/CaretRight--white.png"
               alt="CaretRight"
               width="16"
               height="16"
             />
-            <span class="link-page">Blog</span>
+            <a href="./blog.html">
+              <span class="link-page">Blog</span>
+            </a>
           </div>
         </div>
 
-        <div class="main__blog-content">
+        <!----------- main blog-content---------- -->
+        <div class="main__blog-content d-flex">
           <div class="main__blog-list d-flex">
             <div class="main__blog-items">
-              <img
-                src="./assets/img/blog-items-img.png"
-                alt="Blog Image"
-                class="main__blog-img"
-              />
+              <a href="#!">
+                <img
+                  src="./assets/img/blog-items-img.png"
+                  alt="Blog Image"
+                  class="main__blog-img"
+                />
+              </a>
               <div class="main__blog-meta d-flex">
                 <img src="./assets/img/Calendar-blog.png" alt="Calendar" />
                 <span>Feb 14, 2022 /</span>
@@ -128,19 +135,19 @@
                 <img src="./assets/img/ArrowLineUpRight.png" alt="" />
               </button>
               <div class="blog__calender--abso d-flex">
-                <span class="calendar-abso">
-                  14 
-                </span>
-              
-                  <span class="month">Feb</span>
+                <span class="calendar-abso"> 14 </span>
+
+                <span class="month">Feb</span>
               </div>
             </div>
             <div class="main__blog-items">
-              <img
-                src="./assets/img/blog-items-img.png"
-                alt="Blog Image"
-                class="main__blog-img"
-              />
+              <a href="#!">
+                <img
+                  src="./assets/img/blog-items-img.png"
+                  alt="Blog Image"
+                  class="main__blog-img"
+                />
+              </a>
               <div class="main__blog-meta d-flex">
                 <img src="./assets/img/Calendar-blog.png" alt="Calendar" />
                 <span>Feb 14, 2022 /</span>
@@ -170,18 +177,18 @@
                 <img src="./assets/img/ArrowLineUpRight.png" alt="" />
               </button>
               <div class="blog__calender--abso d-flex">
-                <span class="calendar-abso">
-                  14</span>
-                  <span class="month">Feb</span>
-                
+                <span class="calendar-abso"> 14</span>
+                <span class="month">Feb</span>
               </div>
             </div>
             <div class="main__blog-items">
-              <img
-                src="./assets/img/blog-items-img.png"
-                alt="Blog Image"
-                class="main__blog-img"
-              />
+              <a href="#!">
+                <img
+                  src="./assets/img/blog-items-img.png"
+                  alt="Blog Image"
+                  class="main__blog-img"
+                />
+              </a>
               <div class="main__blog-meta d-flex">
                 <img src="./assets/img/Calendar-blog.png" alt="Calendar" />
                 <span>Feb 14, 2022 /</span>
@@ -216,11 +223,13 @@
               </div>
             </div>
             <div class="main__blog-items">
-              <img
-                src="./assets/img/blog-items-img.png"
-                alt="Blog Image"
-                class="main__blog-img"
-              />
+              <a href="#!">
+                <img
+                  src="./assets/img/blog-items-img.png"
+                  alt="Blog Image"
+                  class="main__blog-img"
+                />
+              </a>
               <div class="main__blog-meta d-flex">
                 <img src="./assets/img/Calendar-blog.png" alt="Calendar" />
                 <span>Feb 14, 2022 /</span>
@@ -250,34 +259,441 @@
                 <img src="./assets/img/ArrowLineUpRight.png" alt="" />
               </button>
               <div class="blog__calender--abso d-flex">
-                <span class="calendar-abso">
-                  14</span>
-                  <span class="month">Feb</span>
-                </span>
+                <span class="calendar-abso"> 14</span>
+                <span class="month">Feb</span>
               </div>
             </div>
 
-            <div class="main__blog-plink">
+            <!-- --------------------main plink ---------------->
+            <div class="main__plink">
               <ul class="d-flex">
-                <li class="d-flex"> 
-                  <a href="#!"> << </a>
+                <li class="d-flex">
+                  <a href="#!"> &lt;&lt; </a>
                 </li>
-                <li class="d-flex"> 
+                <li class="d-flex">
                   <a href="#!">1</a>
                 </li>
-                <li class="d-flex"> 
+                <li class="d-flex">
                   <a href="#!">2</a>
                 </li>
-                <li class="d-flex"> 
+                <li class="d-flex">
                   <a href="#!">3</a>
                 </li>
-                <li class="d-flex"> 
-                  <a href="#!">>></a>
+                <li class="d-flex">
+                  <a href="#!">&gt;&gt;</a>
                 </li>
               </ul>
             </div>
           </div>
-          <aside></aside>
+
+          <!-- ------------------Aside blog---------------- -->
+          <aside class="aside__blog">
+            <form class="d-flex">
+              <input type="email" placeholder="Search Your Keword.." />
+              <button>
+                <img
+                  src="./assets/img/btn-search.png"
+                  alt="search"
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </form>
+            <!-- -------------aside blogger----------------- -->
+            <div class="aside__blogger-info d-flex">
+              <img
+                src="./assets/img/ava-blogger.png"
+                alt="Avatar"
+                class="ava_blogger"
+              />
+              <a href="#!">
+                <h3>Prince Miyako</h3>
+              </a>
+              <a href="#!">
+                <span>Blogger/Photographer</span>
+              </a>
+              <div class="aside__blogger-review">
+                <img src="./assets/img/review.png" alt="review" />
+                <span>(1 Review)</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur <br />
+                adipisicing elit.Veritatis distinctio, odio <br />
+                eligendi suscipit reprehenderit atque
+              </p>
+              <ul class="d-flex">
+                <li>
+                  <a href="#!">
+                    <img src="./assets/img/icon-facebook.png" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img src="./assets/img/icon-twitter.png" alt="twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="./assets/img/icon-insta.png" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="./assets/img/icon-pinterest.png" alt="pinterest"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- -----------aside recent post-------------- -->
+            <div class="aside__recent-post">
+              <a href="#!">
+                <h3>Recent Post</h3>
+              </a>
+              <ul class="d-flex">
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/ham_recent.png"
+                      alt="Ham Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right">
+                    <a href="#!">
+                      <span>June 22, 2020</span>
+                    </a>
+                    <a href="#!">
+                      <p>
+                        Lorem ipsum dolor sit cing <br />
+                        elit, sed do.
+                      </p>
+                    </a>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/fish-recent.png"
+                      alt="fish Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right">
+                    <a href="#!">
+                      <span>June 22, 2020</span>
+                    </a>
+                    <a href="#!">
+                      <p>
+                        Lorem ipsum dolor sit cing <br />
+                        elit, sed do.
+                      </p>
+                    </a>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/salad-recent.png"
+                      alt="salad Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right">
+                    <a href="#!">
+                      <span>June 22, 2020</span>
+                    </a>
+                    <a href="#!">
+                      <p>
+                        Lorem ipsum dolor sit cing <br />
+                        elit, sed do.
+                      </p>
+                    </a>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/cream-recent.png"
+                      alt="cream Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right">
+                    <a href="#!">
+                      <span>June 22, 2020</span>
+                    </a>
+                    <a href="#!">
+                      <p>
+                        Lorem ipsum dolor sit cing <br />
+                        elit, sed do.
+                      </p>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- -----------aside filter by menu-------------- -->
+
+            <div class="aside__f-b-m">
+              <a href="#!">
+                <h3>Filter By Menu</h3>
+              </a>
+
+              <ul class="d-flex">
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/cream-recent.png"
+                      alt="cream Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right d-flex">
+                    <a href="#!">
+                      <span>Chicken Fry</span>
+                    </a>
+                    <span>26</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/cream-recent.png"
+                      alt="cream Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right d-flex">
+                    <a href="#!">
+                      <span>Burger Food</span>
+                    </a>
+                    <span>46</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/cream-recent.png"
+                      alt="cream Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right d-flex">
+                    <a href="#!">
+                      <span>Pizza</span>
+                    </a>
+                    <span>16</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/cream-recent.png"
+                      alt="cream Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right d-flex">
+                    <a href="#!">
+                      <span>Fresh Fruits</span>
+                    </a>
+                    <span>36</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <a href="#">
+                    <img
+                      src="./assets/img/cream-recent.png"
+                      alt="cream Image"
+                      width="80"
+                      height="80"
+                    />
+                  </a>
+                  <div class="recent-post--right d-flex">
+                    <a href="#!">
+                      <span>Vegetables</span>
+                    </a>
+                    <span>16</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- -----------aside popular tag------------- -->
+            <div class="aside__popular-tags">
+              <a href="#!">
+                <h3>Populer Tags</h3>
+              </a>
+              <div class="popular-tags__content">
+                <div class="popular-tags__items">
+                  <a href="#!">Sandwich</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Tikka</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">BBQ</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Restaurant</a>
+                </div>
+                <div class="popular-tags__items grid-2-col">
+                  <a href="#!">Chicken Sharma</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Health</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Fastfood</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Food</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Pizza</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Burger</a>
+                </div>
+                <div class="popular-tags__items">
+                  <a href="#!">Chicken</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- -----------aside photo gallery---------- -->
+            <div class="aside__photo-gallery">
+              <a href="#!">
+                <h3>Filter By Menu</h3>
+              </a>
+              <div class="photo-gallery__img">
+                <a href="#!">
+                  <img
+                    src="./assets/img/photo-galerry-pizza.png"
+                    alt="pizza"
+                    width="100"
+                    height="82"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="./assets/img/photo-galerry-eggs.png"
+                    alt="eggs"
+                    width="100"
+                    height="82"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="./assets/img/photo-galerry-fish.png"
+                    alt="fish"
+                    width="100"
+                    height="82"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="./assets/img/photo-galerry-meat.png"
+                    alt="meat"
+                    width="100"
+                    height="82"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="./assets/img/photo-galerry-scroll.png"
+                    alt="scroll"
+                    width="100"
+                    height="82"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="./assets/img/photo-galerry-bread.png"
+                    alt="bread"
+                    width="100"
+                    height="82"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- -----------aside follow us--------- -->
+            <div class="aside__follow-us">
+              <a href="#!">
+                <h3>Follow Us</h3>
+              </a>
+              <div class="aside__follow-us--social d-flex">
+                <div class="follow-us__social--items">
+                  <a href="#!" class="d-flex integral"
+                    ><img
+                      src="assets/img/icon-facebook.png"
+                      alt="Facebook" /></a
+                  ><a href="#!" class="d-flex hover"
+                    ><img
+                      src="assets/img/icon-facebook-hover.png"
+                      alt="Facebook"
+                  /></a>
+                </div>
+
+                <div class="follow-us__social--items">
+                  <a href="#!" class="d-flex integral"
+                    ><img src="./assets/img/icon-twitter.png" alt="Twitter"
+                  /></a>
+                  <a href="#!" class="d-flex hover"
+                    ><img
+                      src="./assets/img/icon-twitter-hover.png"
+                      alt="Twitter"
+                  /></a>
+                </div>
+
+                <div class="follow-us__social--items">
+                  <a href="#!" class="d-flex integral"
+                    ><img
+                      src="./assets/img/icon-youtube.png"
+                      alt="YouTube" /></a
+                  ><a href="#!" class="d-flex hover"
+                    ><img
+                      src="./assets/img/icon-youtube-hover.png"
+                      alt="YouTube"
+                  /></a>
+                </div>
+                <div class="follow-us__social--items">
+                  <a href="#!" class="d-flex integral"
+                    ><img src="./assets/img/icon-insta.png" alt="Instagram"
+                  /></a>
+                  <a href="#!" class="d-flex hover"
+                    ><img
+                      src="./assets/img/icon-insta-hover.png"
+                      alt="Instagram"
+                  /></a>
+                </div>
+                <div class="follow-us__social--items">
+                  <a href="#!" class="d-flex integral"
+                    ><img src="./assets/img/icon-pinterest.png" alt="Pinterest"
+                  /></a>
+                  <a href="#!" class="d-flex hover"
+                    ><img
+                      src="./assets/img/icon-pinterest-hover.png"
+                      alt="Pinterest"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
       </main>
 

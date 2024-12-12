@@ -1,0 +1,449 @@
+// -----------Main about----------
+.main__about-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 360px;
+  background-image: url(/assets/img/bgr-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $page-color;
+    font-family: $font-main;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 56px;
+    z-index: 99;
+  }
+  .main__about-breadcrumb {
+    z-index: 99;
+    margin-top: 20px;
+    gap: 5px;
+    align-items: center;
+    span {
+      color: $page-color;
+      font-family: $font-sub;
+      font-size: 2rem;
+      line-height: 28px;
+    }
+    .link-page {
+      color: $logo-sub-color;
+      font-family: $font-sub;
+      font-size: 2rem;
+      line-height: 28px;
+    }
+  }
+}
+
+//
+.main__about {
+  margin-top: 130px;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 80px;
+  //// Main about us left
+  .main__about--left {
+    gap: 20px;
+    .about__image--sub {
+      margin-top: 35px;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  //// Main about us right
+  .main__about--right {
+    margin-top: 130px;
+
+    h2 {
+      margin-top: 8px;
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 1;
+      word-spacing: 3px;
+    }
+    p {
+      margin-top: 32px;
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+    span::before {
+      content: "";
+      bottom: 30%;
+      right: -60%;
+      position: absolute;
+      width: 2.7rem;
+      height: 0.1rem;
+      border-radius: 6px;
+      background: $sub-color;
+    }
+    button {
+      background: $logo-sub-color;
+      color: $page-color;
+      border: none;
+      &:hover {
+        background: $page-color;
+        color: $logo-sub-color;
+        font-family: $font-sub;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.6;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+    }
+    .about__btn {
+      margin-top: 33px;
+      align-items: center;
+      gap: 16px;
+    }
+    .about__btn--watch {
+      gap: 10px;
+      align-items: center;
+      a {
+        color: $title-color;
+        font-family: $font-sub;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.4;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// <!-- Main about why choose us -->
+
+.main__why-choose-us {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 120px;
+  h2 {
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 4.6rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 56px;
+  }
+  p {
+    margin-top: 8px;
+    color: $desc-color;
+    text-align: center;
+    font-family: $font-main;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  .why-choose-us-img {
+    margin-top: 55px;
+    width: 100%;
+  }
+  ul {
+    margin-top: 60px;
+    gap: 120px;
+    li {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h3 {
+      margin-top: 24px;
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 32px;
+    }
+    p {
+      margin-top: 16px;
+    }
+  }
+}
+
+// --------------------Main team member------------------
+.main__team-member {
+  position: relative;
+  margin-top: 200px;
+  flex-direction: column;
+  // team member bgr
+  .team-member__bgr {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 400px;
+    }
+    .img-abs {
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 99;
+    }
+  }
+  // team member title
+  .team-member__title {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    z-index: 999;
+    align-self: center;
+    h2 {
+      color: $page-color;
+      font-family: $font-main;
+      font-size: 4.4rem;
+      font-weight: 700;
+      line-height: 56px;
+    }
+    p {
+      color: $page-color;
+      text-align: center;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
+  // team member list
+  .team-member__list {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    ul {
+      position: absolute;
+      bottom: -55%;
+      gap: 35px;
+      text-align: center;
+
+      z-index: 1000;
+      li {
+        background: $page-color;
+        box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
+        padding-bottom: 16px;
+      }
+      h3 {
+        margin-top: 10px;
+        color: $desc-color;
+        font-family: $font-main;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 28px;
+      }
+      span {
+        color: $desc-color-sub;
+        font-family: $font-main;
+        font-size: 1.6rem;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+// <!-- Main Testimonials about -->
+.main__about-testimonials {
+  margin-top: 350px;
+  padding-left: 200px;
+  padding-right: 200px;
+  flex-direction: column;
+  .span-about-testimonials {
+    color: $logo-sub-color;
+    font-family: $font-note;
+    font-size: 2.2rem;
+  }
+  h2 {
+    margin-top: 8px;
+    color: $title-color;
+    font-family: $font-main;
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  .about-testimonials--content {
+    position: relative;
+    margin-top: 120px;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 80px 80px 30px 80px;
+    background: $page-color;
+    box-shadow: 0px 0px 80px 0px rgba(205, 205, 205, 0.25);
+    .ava-testimonials {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    p {
+      margin-top: 30px;
+      width: 100%;
+      padding: 0;
+      color: $desc-color;
+      text-align: center;
+      font-family: $font-main;
+      font-size: 1.4rem;
+      line-height: 20px;
+    }
+    .star-testimonials {
+      margin-top: 25px;
+    }
+    h3 {
+      margin-top: 16px;
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 32px;
+    }
+    span {
+      margin-top: 8px;
+      color: $desc-color-sub;
+      font-family: $font-main;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+    .dotted-testimonials {
+      position: absolute;
+      bottom: -50px;
+    }
+  }
+}
+
+// ----------Main food menu about------------
+.main__about-food-menu {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+
+  .main-food-menu--title {
+    h2 {
+      color: $title-color;
+      text-align: center;
+      font-family: $font-main;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 56px;
+    }
+    p {
+      margin-top: 8px;
+      color: $desc-color;
+      text-align: center;
+      font-family: $font-sub;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
+
+  ul {
+    margin-top: 55px;
+    gap: 46px;
+    justify-content: center;
+    li {
+      color: $desc-color;
+      font-family: $font-sub;
+      font-size: 1.8rem;
+      line-height: 28px;
+      position: relative;
+      &:hover {
+        color: $logo-sub-color;
+      }
+      &::after {
+        content: "";
+        background: $logo-sub-color;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+  hr {
+    margin-top: 24px;
+    background: $after-color;
+  }
+  .main-food-menu__list {
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 24px 24px;
+  }
+  button {
+    align-self: center;
+    margin-top: 50px;
+    &:hover {
+      background-color: $logo-sub-color;
+      transition: background 0.2s ease-in-out;
+
+      color: $page-color;
+    }
+  }
+}
+.main-food-menu__items {
+  position: relative;
+
+  justify-content: space-between;
+  align-items: center;
+  .main-food-menu__items--info {
+    h3 {
+      color: $title-color;
+      font-family: $font-main;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 32px;
+      &:hover {
+        color: $logo-sub-color;
+      }
+    }
+    p {
+      margin-top: 3px;
+      color: $desc-color;
+      font-family: $font-main;
+      font-size: 1.4rem;
+      text-align: left;
+    }
+    span {
+      margin-top: 3px;
+      color: $desc-color-sub;
+      font-family: $font-main;
+      font-size: 1.3rem;
+      line-height: 24px;
+    }
+  }
+
+  .main-food-menu__items--price {
+    span {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      color: $logo-sub-color;
+      font-family: $font-main;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+}
+.main-food-menu__items::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: $after-color;
+  border-bottom: 1px dotted $after-color;
+}

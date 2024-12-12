@@ -6,7 +6,6 @@
 html,
 body,
 div,
-span,
 applet,
 object,
 iframe,
@@ -140,6 +139,7 @@ button {
   box-sizing: border-box;
 }
 html {
+  font-weight: 400;
   font-size: 62.5%;
 }
 .container {
