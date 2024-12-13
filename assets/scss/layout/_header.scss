@@ -3,14 +3,16 @@
   display: flex;
 }
 .home__header {
-  align-items: center;
-  position: relative;
-  justify-content: space-between;
   padding: 40px 200px;
   z-index: 99;
   // gap: 94px;
   // .header__bgr {
   // }
+  .header__home-container {
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+  }
   .home__header-icon {
     z-index: 99;
     gap: 16px;
@@ -76,6 +78,16 @@
   // gap: 94px;
   // .header__bgr {
   // }
+  .header__menu-container,
+  .header__blog-container,
+  .header__about-container,
+  .header__shop-container {
+    width: 100%;
+    max-width: 1920px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+  }
   .logo {
     color: $page-color;
     font-family: $font-main;

@@ -34,43 +34,117 @@
     <div class="container">
       <!-- Header menu -->
       <header class="header-form d-flex">
-        <a href="./index.html" class="logo"> Food<span>tuck</span> </a>
+        <div class="header__menu-container d-flex">
+          <!-- tablet mobile -->
+          <div class="mobile-header">
+            <input
+              type="checkbox"
+              id="menu-checkbox"
+              class="menu-checkbox"
+              hidden
+            />
+            <label for="menu-checkbox">
+              <svg
+                class="menu-header__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="#FFD43B"
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </label>
 
-        <nav>
-          <ul class="header-nav d-flex">
-            <li>
-              <a href="./index.html" title="Home">Home</a>
-            </li>
-            <li>
-              <a href="./menu.html" title="Menu">Menu</a>
-            </li>
-            <li>
-              <a href="./blog.html" title="Blog">Blog</a>
-            </li>
-            <li>
-              <a href="/about.html" title="About">About</a>
-            </li>
-            <li>
-              <a href="/shop.html" title="Shop">Shop</a>
-            </li>
-          </ul>
-        </nav>
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
 
-        <div class="header-icon d-flex">
-          <div class="icon__search">
-            <a href="#!">
-              <img src="./assets/img/icon-search-sub.png" alt="search"
-            /></a>
+            <!-- menu-content -->
+            <div class="menu-drawer">
+              <!-- menu top -->
+              <div class="menu-drawer__top d-flex">
+                <!-- logo -->
+                <a href="./index.html">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="Logo"
+                    width="125"
+                    height="25"
+                    class="logo"
+                  />
+                </a>
+                <!-- icon close menu-->
+                <label for="menu-checkbox">
+                  <svg
+                    class="close__menu"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+                    />
+                  </svg>
+                </label>
+              </div>
+              <!-- nav mobile -->
+              <ul class="home__header-nav">
+                <li>
+                  <a href="./index.html" title="Home">Home</a>
+                </li>
+                <li>
+                  <a href="./menu.html" title="Menu">Menu</a>
+                </li>
+                <li>
+                  <a href="./blog.html" title="Blog">Blog</a>
+                </li>
+                <li>
+                  <a href="/about.html" title="About">About</a>
+                </li>
+                <li>
+                  <a href="/shop.html" title="Shop">Shop</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="icon__profile">
-            <a href="#!">
-              <img src="./assets/img/icon-user-sub.png" alt="user"
-            /></a>
-          </div>
-          <div class="icon__cart">
-            <a href="#!">
-              <img src="./assets/img/icon-cart-sub.png" alt="cart"
-            /></a>
+
+          <a href="./index.html" class="logo"> Food<span>tuck</span> </a>
+
+          <nav>
+            <ul class="header-nav d-flex">
+              <li>
+                <a href="./index.html" title="Home">Home</a>
+              </li>
+              <li>
+                <a href="./menu.html" title="Menu">Menu</a>
+              </li>
+              <li>
+                <a href="./blog.html" title="Blog">Blog</a>
+              </li>
+              <li>
+                <a href="/about.html" title="About">About</a>
+              </li>
+              <li>
+                <a href="/shop.html" title="Shop">Shop</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-icon d-flex">
+            <div class="icon__search">
+              <a href="#!">
+                <img src="./assets/img/icon-search-sub.png" alt="search"
+              /></a>
+            </div>
+            <div class="icon__profile">
+              <a href="#!">
+                <img src="./assets/img/icon-user-sub.png" alt="user"
+              /></a>
+            </div>
+            <div class="icon__cart">
+              <a href="#!">
+                <img src="./assets/img/icon-cart-sub.png" alt="cart"
+              /></a>
+            </div>
           </div>
         </div>
       </header>
@@ -472,7 +546,7 @@
               <li><a href="#!">Contact</a></li>
             </ul>
           </div>
-          <div class="footer__help">
+          <div class="footer__help d-none">
             <h3>Help?</h3>
             <ul class="d-flex">
               <li><a href="#!">FAQ</a></li>
@@ -483,7 +557,7 @@
               <li><a href="#!">Privacy</a></li>
             </ul>
           </div>
-          <div class="footer__recent-posts">
+          <div class="footer__recent-posts d-none">
             <h3>Recent Posts</h3>
             <ul class="d-flex">
               <li class="d-flex">
