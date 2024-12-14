@@ -2892,17 +2892,19 @@ footer {
   }
   .home__header-nav {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .home__header-nav a {
-    padding-right: 100px;
+    font-size: 2.2rem;
+    padding: 10px;
+    padding-right: 150px;
     display: block;
     transition: 0.3s;
   }
   .home__header-nav a:hover {
     background-color: #195a00;
-  }
-  .home__header-nav li {
-    font-size: 1.6rem;
   }
   .main__hero {
     flex-direction: column-reverse;
@@ -2956,13 +2958,17 @@ footer {
     align-self: center;
   }
   .main__food-category {
+    display: flex;
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 100px;
-  }
-  .main__food-category ul {
     flex-direction: column;
     align-items: center;
+  }
+  .main__food-category ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   .main__wcu {
     gap: 50px;
@@ -3118,6 +3124,22 @@ footer {
   .main__blog-content .main__blog-items h3::after {
     width: 100%;
   }
+  .page__header-nav {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .page__header-nav a {
+    font-size: 2.2rem;
+    padding: 20px;
+    padding-right: 150px;
+    display: block;
+    transition: 0.3s;
+  }
+  .page__header-nav a:hover {
+    background-color: #ff9f0d;
+  }
   .aside__f-b-m,
   .aside__popular-tags,
   .aside__recent-post,
@@ -3196,6 +3218,9 @@ footer {
     position: absolute;
     top: 0;
     right: -30%;
+  }
+  .main__blog-content .main__blog-items .blog__calender--abso {
+    z-index: 1;
   }
   .footer__support-inquiry {
     flex-direction: column;
@@ -3277,7 +3302,7 @@ footer {
     transition: 0.5s;
   }
   .menu-checkbox:checked ~ .menu-drawer {
-    transform: translateX(0);
+    transform: translateX();
   }
   .menu-drawer__top {
     justify-content: space-between;
@@ -3351,8 +3376,9 @@ footer {
     margin-top: 100px;
   }
   .main__food-category ul {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   .main__wcu {
     gap: 50px;
